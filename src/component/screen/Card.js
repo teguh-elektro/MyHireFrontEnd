@@ -7,6 +7,7 @@ const divBox = {
   boxShadow : '0 20px 20px #777'
 }
 
+const API_URL = 'http://18.233.99.1:3000';
 class Card extends React.Component {
 
   render () {
@@ -17,7 +18,7 @@ class Card extends React.Component {
         <div className='block block-rounded bg-dark' style={divBox} >
           <div className='block-content p-0 overflow-hidden' style={{width : '100%', height : 200}}>
             <Link to={'/profilereview/'+this.props.created_by} className='img-link' >
-              <img className='img-fluid rounded-top' src={`http://localhost:3000/myhire/file/${this.props.photo}`} alt={this.props.name} style={{maxWidth : '100%'}}/>
+              <img className='img-fluid rounded-top' src={`${API_URL}/myhire/file/${this.props.photo}`} alt={this.props.name} style={{maxWidth : '100%'}}/>
             </Link>
           </div>
           <div className='block-content bg-primary-light text-white' style={{height : 85}}>

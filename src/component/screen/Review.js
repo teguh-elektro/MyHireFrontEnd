@@ -199,8 +199,8 @@ class Review extends React.Component {
         <div className="content content-full text-center">
           <div className="mb-15">
             
-            <a className="img-link" href={`http://localhost:3000/myhire/file/${this.state.myData.photo}`}>
-              <img className="img-avatar img-avatar96 img-avatar-thumb" src={`http://localhost:3000/myhire/file/${this.state.myData.photo}`} alt={this.state.myData.name} />
+            <a className="img-link" href={`${API_URL}/myhire/file/${this.state.myData.photo}`}>
+              <img className="img-avatar img-avatar96 img-avatar-thumb" src={`${API_URL}/myhire/file/${this.state.myData.photo}`} alt={this.state.myData.name} />
             </a>
           </div>
     <h1 className="h3 text-white font-w700 mb-10"> {this.state.myData.name}</h1>
